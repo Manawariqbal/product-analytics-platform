@@ -26,7 +26,7 @@ Frontend
 
 Backend
 
-- FastAPI
+- Nodejs
 
 Streaming
 
