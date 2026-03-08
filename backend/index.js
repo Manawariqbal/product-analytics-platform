@@ -5,6 +5,8 @@ import dotenv from "dotenv";
 import eventsRoutes from "./src/routes/events.js";
 import projectsRoutes from "./src/routes/projects.js";
 import analyticsRoutes from "./src/routes/analytics.js";
+import path from "path";
+
 
 
 dotenv.config();
@@ -16,7 +18,7 @@ const app = express();
 | Middlewares
 |--------------------------------------------------------------------------
 */
-
+app.use(express.static("public"));
 app.use(cors());
 app.use(express.json());
 

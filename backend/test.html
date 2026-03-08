@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Analytics Test</title>
+</head>
+
+<body>
+
+<h1>Analytics Test</h1>
+
+<button onclick="signup()">Signup</button>
+
+<script src="http://localhost:5000/analytics.js"></script>
+
+<script>
+
+analytics.init("pk_live")
+
+analytics.track("page_view")
+
+function signup(){
+  analytics.track("signup", {
+    plan: "free"
+  })
+}
+
+</script>
+
+</body>
+</html>
